@@ -3,37 +3,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formulario de registro</title>
-    <!-- Enlace a los archivos CSS de Bootstrap -->
-    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css integrity="sha384-xxxxxxxxxxxx" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bienvenid</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+
+
+
 </head>
 <body>
 <div class="container">
-    <h1>Formulario de registro</h1>
-    <form>
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <label for="nombres" class="form-label">Nombres</label>
-                <input type="text" class="form-control" id="nombres" name="nombres" required>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
-            </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+             <h1 Class="mb-4">registro</h1>
+            <form>
+                <div class="form-group">
+                    <label for="names">Nombres</label>
+                    <input type="text" class="form-control" id="names" placeholder="Ingrese su nombre" name="names" required autofocus
+                           pattern="[A-Za-z ]{2,40}">
+                </div>
+                <div class="form-group">
+                    <label for="last name">Apellidos</label>
+                    <input type="text" class="form-control" id="last name" placeholder="Ingrese su apellido" name="last name" required
+                           pattern="[A-Za-z ]{2, 40}">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" name="email" required
+                           pattern="{,60}">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="password" name="password" required
+                           pattern="[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]){8,16}"><br>
+                </div>
+                <button class="btn btn-secondary btn-block">Ingresar</button>
+
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="correo" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" name="correo" required>
-        </div>
-        <div class="mb-3">
-            <label for="contrasena" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    </div>
 </div>
-<!-- Enlace a los archivos JavaScript de Bootstrap -->
-<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js integrity="sha384-xxxxxxxxxxxx" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
