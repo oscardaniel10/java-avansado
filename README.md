@@ -26,18 +26,18 @@
              2. <label for="apellido">Apellidos</label> 
               <tipo de entrada="texto" clase="control de formulario" id="apellido" marcador de posición="Ingrese su apellido" nombre="apellido" requerido patrón="[A-Za-z]{2,40}"> 
             </div> 
-            
+            __
             <div clase="grupo-formulario"> 
               3.<label for="email">Correo electrónico</label> 
               <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" name="email" patrón requerido="{,60}"> 
             </div> 
-           
+           __
             <div clase="grupo-formulario"> 
               4.<label for="contraseña">Contraseña</label> 
               <tipo de entrada="contraseña" class="form-control" placeholder="Ingrese su contraseña" id="contraseña" name="contraseña" patrón requerido="[az])(?=.*[AZ])(?=.*[0-9])(?=.*[!@#$%^&*_=\+-]){8,16}"><br> 
             </div> 
-            
-            5.<clase de botón="btn btn-secundario btn-block">Ingresar</button> 
+            __
+            5.<clase de botón="btn btn-secundario btn-block">Ingresar</button>  <br>
             6.<button type="submit" class="btn btn-primary btn-block">Enviar</button> 
          </formulario> 
         </div> 
